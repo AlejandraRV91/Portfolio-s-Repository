@@ -8,10 +8,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Who do you think you are?</title>
 		<link rel="icon" href="assets/images/icon.png" />
-		<link rel="stylesheet" href="assets/styles/stylesIndex.css" />
+		<link rel="stylesheet" href="assets/styles/stylesSelfDiscWithUs.css" />
 	</head>
 	<body>
-		<script src="assets/scripts/functionalityIndex.js" defer></script>
+		<script
+			src="assets/scripts/functionalitySelfDiscWithUs.js"
+			defer></script>
 		<header>
 			<div class="aligning-header-elements">
 				<a href="index.html" class="titleStyle"
@@ -21,13 +23,6 @@
 					<li>
 						<div class="li-container">
 							<a href="newsInCode.html"> News in Code </a>
-						</div>
-					</li>
-					<li>
-						<div class="li-container">
-							<a href="selfDiscoveryWithUs.html"
-								>Self-discovery with us</a
-							>
 						</div>
 					</li>
 					<li>
@@ -101,15 +96,21 @@
 			</ul>
 		</aside>
 		<main>
-			<div id="video-container"></div>
-			<div class="video-text-container">
-				<h2>SEEKING AN UNDISCOVERED “YOU” WHILE HAVING A GOOD TIME?</h2>
-				<p>
-					Inspired by pop culture, our results bring the relatable fun
-					of internet humor from your
-				</p>
-				<p>device into your life — wherever you are.</p>
-			</div>
+			<button id="start-button">
+				Start playing to discover yourself
+			</button>
+			<form id="form-meme-captions" class="hide">
+				<p>Choose a caption for this image!</p>
+				<p id="time"></p>
+				<img src="" alt="" id="meme" height="400px" />
+				<select id="captions-selector">
+					<option value="invalido">Choose a caption</option>
+				</select>
+				<input
+					type="submit"
+					value="Submit"
+					class="submit-meme-caption-form" />
+			</form>
 		</main>
 		<footer>
 			<div class="aligning-header-elements">

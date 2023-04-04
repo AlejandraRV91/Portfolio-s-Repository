@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@1&family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@1,300&display=swap');
+
 header {
     background-color: #312f78;
     grid-column: 1/3;
@@ -9,13 +13,10 @@ header {
     font-size: 18px;
 }
 
-.aligning-header-elements{
-    display: flex;
-    align-items: center;
-}
 
 aside img{
     margin-top: 3px;
+    border-radius: 10px;
 }
 
 .iconsUpdates {
@@ -27,8 +28,16 @@ aside img{
     display: inline;
     margin: 15px;
     font-weight: bold;
-    width: 170px;
+    width: 160px;
+    font-family: "Fjalla One";
+    transition-property: font-size;
+    transition-duration: 1s;
+    transition-delay: 0s;
 }
+
+.titleStyle:hover {
+    font-size: 20px;
+} 
 
 .aligning-icons-horizontally,.header-list-elements-animation{
     display: flex;
@@ -92,6 +101,9 @@ body {
     line-height: 1.5;
     font-size: 14px;
 }
+.hide{
+    display: none;
+}
 
 aside ul{
     margin: 0px;
@@ -107,6 +119,7 @@ main {
     grid-column: 2/3;
     background-color: #b6ccb5;
     position: relative;
+    font-family: "Righteous";
 }
 
 #video-container iframe{
@@ -132,11 +145,45 @@ main {
 
 footer{
     grid-column: 1/3;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    text-align: center;
+    grid-template-rows: 1fr 1fr;
     grid-row: 3;
     background-color: #312f78;
-    height: 90px;
+}
+
+
+footer p{
+    margin: 0px 100px;
+    margin-bottom: 10px;
+    font-family: "Sarabun";
+}
+
+.aligning-header-elements{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about-me{
+    background-color: #322f78df;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 20px;
+    position: absolute;
+    top: 20%;
+    z-index: 100;
+    left: 50%;
+}
+
+.about-me img{
+    border-radius: 20px;
 }
 
 .video-text-container{
